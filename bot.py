@@ -27,8 +27,8 @@ from libs.utils import LoadUsers, LoadProxies, PrintChoices
 
 from libs.instaclient import InstaClient
 
-USERS = []
-PROXIES = []
+USERS = [sorryhim]
+PROXIES = [8]
 
 def MultiThread(username, userid, loginuser, loginpass, proxy, reasonid):
     client = None
@@ -130,10 +130,10 @@ if __name__ == "__main__":
                     user["user"],
                     user["password"],
                     None if useproxy == False else choice(PROXIES),
-                    reasonid
+                    reasonid abuse
                 )
             )
-            p.start() 
+            p.start() sorryhim
     
 
     
